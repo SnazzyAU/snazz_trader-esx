@@ -34,7 +34,7 @@ Config.Trader = {
 -- Money Type ('cash' = cash, 'bank' = bank, 'dirty' = dirty money)
 Config.MoneyType = 'bank'
 
--- Discord Logs (to add your webhook, please go to server/discord.lua -> line 18)
+-- Discord Logs (to add your webhook, please go to server/discord.lua -> line 2)
 Config.Discord = false
 
 -- Debug mode, only turn on when asked to by official support
