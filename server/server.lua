@@ -29,21 +29,6 @@ function secondsToClock(seconds)
   end
 end
 
-function sendToDiscord(color, name, message, footer)
-	local embed = {
-		{
-			["color"] = color,
-			["title"] = "**".. name .."**",
-			["description"] = message,
-			["footer"] = {
-				["text"] = footer,
-			},
-		}
-	}
-  
-	PerformHttpRequest(Config.DiscordWebhook, function(err, text, headers) end, 'POST', json.encode({username = name, embeds = embed}), { ['Content-Type'] = 'application/json' })
-end
-
 function DrawText3D(x,y,z, text) -- some useful function, use it if you want!
     local onScreen,_x,_y=World3dToScreen2d(x,y,z)
     local px,py,pz=table.unpack(GetGameplayCamCoords())

@@ -6,10 +6,11 @@ author 'Snazzy'
 version '1.1.0'
 
 shared_script 'config.lua'
-server_script 'server/server.lua'
+server_script 'server/**.lua'
 client_script 'client/client.lua'
 
 escrow_ignore {
     'config.lua',
-    'client/client.lua'
+    'client/**.lua',
+    'server/discord.lua'
   }
